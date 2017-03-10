@@ -2,7 +2,7 @@
 # This script blocks telemetry related domains via the hosts file and related
 # IPs via Windows Firewall.
 
-Import-Module -DisableNameChecking $PSScriptRoot\..\lib\force-mkdir.psm1
+Import-Module -DisableNameChecking $PSScriptRoot\lib\force-mkdir.psm1
 
 echo "Disabling telemetry via Group Policies"
 force-mkdir "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
@@ -50,12 +50,9 @@ $domains = @(
     "c.atdmt.com"
     "cdn.atdmt.com"
     "cds26.ams9.msecn.net"
-    "choice.microsoft.com"
     "choice.microsoft.com.nsatc.net"
     "c.msn.com"
     "compatexchange.cloudapp.net"
-    "corpext.msitadfs.glbdns2.microsoft.com"
-    "corp.sts.microsoft.com"
     "cs1.wpc.v0cdn.net"
     "db3aqu.atdmt.com"
     "df.telemetry.microsoft.com"
@@ -65,7 +62,6 @@ $domains = @(
     "e7502.ce.akamaiedge.net"
     "e8218.ce.akamaiedge.net"
     "ec.atdmt.com"
-    "fe2.update.microsoft.com.akadns.net"
     "feedback.microsoft-hohm.com"
     "feedback.search.microsoft.com"
     "feedback.windows.com"
@@ -98,17 +94,11 @@ $domains = @(
     "secure.adnxs.com"
     "secure.flashtalking.com"
     "services.wes.df.telemetry.microsoft.com"
-    "settings-sandbox.data.microsoft.com"
-    "settings-win.data.microsoft.com"
-    "sls.update.microsoft.com.akadns.net"
     "sqm.df.telemetry.microsoft.com"
     "sqm.telemetry.microsoft.com"
     "sqm.telemetry.microsoft.com.nsatc.net"
     "ssw.live.com"
     "static.2mdn.net"
-    "statsfe1.ws.microsoft.com"
-    "statsfe2.update.microsoft.com.akadns.net"
-    "statsfe2.ws.microsoft.com"
     "survey.watson.microsoft.com"
     "telecommand.telemetry.microsoft.com"
     "telecommand.telemetry.microsoft.com.nsatc.net"
